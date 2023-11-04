@@ -91,37 +91,22 @@ public class HelloController implements Initializable {
         }
     }
 
-//    public void playMedia() {
-//        changeSpeed(null);
-//        mediaPlayer.setVolume(1);
-//        mediaPlayer.setVolume(mySlider.getValue()*0.01);
-//        beginTimer();
-//        if (mediaPlayer != null) {
-//            mediaPlayer.play();
-//        }
-//
-//        mediaPlayer.setOnError(new Runnable() {
-//            @Override
-//            public void run() {
-//                System.out.println("Error at playing media: " + mediaPlayer.getError());
-//            }
-//        });
-//    }
-
     public void playMedia() {
-        try {
-            changeSpeed(null);
-            mediaPlayer.setVolume(1);
-            mediaPlayer.setVolume(mySlider.getValue() * 0.01);
-            beginTimer();
-            if (mediaPlayer != null) {
-                mediaPlayer.play();
-            }
-        } catch (NullPointerException e) {
-            System.out.println("Eroare la redarea media: " + e.getMessage());
+        changeSpeed(null);
+        mediaPlayer.setVolume(1);
+        mediaPlayer.setVolume(mySlider.getValue()*0.01);
+        beginTimer();
+        if (mediaPlayer != null) {
+            mediaPlayer.play();
         }
-    }
 
+        mediaPlayer.setOnError(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("Error at playing media: " + mediaPlayer.getError());
+            }
+        });
+    }
 
     public void pauseMedia() {
         cancelTimer();
