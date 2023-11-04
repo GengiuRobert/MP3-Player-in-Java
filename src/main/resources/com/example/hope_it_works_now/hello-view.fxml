@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="828.0" style="-fx-background-color: #fca2ca;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hope_it_works_now.HelloController">
+   <children>
+      <Button fx:id="myPreviousbutton" layoutY="517.0" mnemonicParsing="false" onAction="#previousMedia" prefHeight="44.0" prefWidth="105.0" text="Previous" textAlignment="CENTER">
+         <font>
+            <Font name="Franklin Gothic Medium" size="20.0" />
+         </font></Button>
+      <Button fx:id="myPlaybutton" layoutX="106.0" layoutY="517.0" mnemonicParsing="false" onAction="#playMedia" prefHeight="44.0" prefWidth="106.0" text="Play" textAlignment="CENTER">
+         <font>
+            <Font name="Franklin Gothic Medium" size="20.0" />
+         </font></Button>
+      <Button fx:id="myNextbutton" layoutX="212.0" layoutY="517.0" mnemonicParsing="false" onAction="#nextMedia" prefHeight="44.0" prefWidth="106.0" text="Next" textAlignment="CENTER">
+         <font>
+            <Font name="Franklin Gothic Medium" size="20.0" />
+         </font></Button>
+      <Button fx:id="myResetbutton" layoutX="424.0" layoutY="517.0" mnemonicParsing="false" onAction="#resetMedia" prefHeight="44.0" prefWidth="106.0" text="Reset" textAlignment="CENTER">
+         <font>
+            <Font name="Franklin Gothic Medium" size="20.0" />
+         </font></Button>
+      <Button fx:id="myShufflebutton" layoutX="530.0" layoutY="517.0" mnemonicParsing="false" onAction="#shuffleMedia" prefHeight="44.0" prefWidth="106.0" text="Shuffle" textAlignment="CENTER">
+         <font>
+            <Font name="Franklin Gothic Medium" size="20.0" />
+         </font></Button>
+      <Button fx:id="myPlaylistbutton" layoutX="636.0" layoutY="517.0" mnemonicParsing="false" onAction="#choose_playlist" prefHeight="44.0" prefWidth="106.0" text="Playlist">
+         <font>
+            <Font name="Franklin Gothic Medium" size="20.0" />
+         </font></Button>
+      <ComboBox fx:id="myCombobox" layoutX="742.0" layoutY="526.0" prefHeight="26.0" prefWidth="86.0" promptText="Speed" />
+      <Label alignment="CENTER" layoutX="327.0" layoutY="6.0" prefHeight="44.0" prefWidth="174.0" text="Now Playing">
+         <font>
+            <Font name="Franklin Gothic Medium" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="myCurrentSonglabel" alignment="CENTER" layoutX="212.0" layoutY="50.0" prefHeight="46.0" prefWidth="430.0">
+         <font>
+            <Font name="Franklin Gothic Medium" size="20.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="275.0" layoutY="383.0" prefHeight="44.0" prefWidth="270.0" text="Next Song">
+         <font>
+            <Font name="Franklin Gothic Medium" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="myNextSonglabel" alignment="CENTER" layoutX="195.0" layoutY="421.0" prefHeight="46.0" prefWidth="430.0">
+         <font>
+            <Font name="Franklin Gothic Medium" size="20.0" />
+         </font></Label>
+      <Label fx:id="myPlaylistlabel" alignment="CENTER" layoutX="186.0" layoutY="569.0" prefHeight="46.0" prefWidth="430.0">
+         <font>
+            <Font name="Franklin Gothic Medium" size="20.0" />
+         </font></Label>
+      <Slider fx:id="mySlider" layoutX="55.0" layoutY="61.0" orientation="VERTICAL" prefHeight="383.0" prefWidth="14.0" value="75.0" />
+      <ProgressBar fx:id="myProgressbar" layoutX="62.0" layoutY="482.0" prefHeight="18.0" prefWidth="651.0" progress="0.0" />
+      <ImageView fitHeight="270.0" fitWidth="271.0" layoutX="279.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../target/classes/com/example/hope_it_works_now/listening.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="myPausebutton" layoutX="318.0" layoutY="517.0" mnemonicParsing="false" onAction="#pauseMedia" prefHeight="44.0" prefWidth="106.0" text="Pause" textAlignment="CENTER">
+         <font>
+            <Font name="Franklin Gothic Medium" size="20.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
