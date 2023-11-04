@@ -2,6 +2,7 @@
 ![Java](https://img.shields.io/badge/Language-Java-orange)
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Hello everyone! After I created the mp3 downloader in python, I decided to do an mp3 player in java this time.
+For the interface I used JavaFx, and to play the media files I decided to use the Media import, you may need some vm options to use that.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 The app contains:
 ------------------------------------------------------------------------------------------------------------------------------------------------
