@@ -53,7 +53,7 @@ public class HelloController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         songs = new ArrayList<File>();
         directory = new File("music");
-        myPlaylistlabel.setText("Defaul Playlist: " + directory);
+        myPlaylistlabel.setText("Default Playlist: " + directory);
         files = directory.listFiles();
         if (files != null) {
             for (File file : files) {
